@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebRTC</title>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="peer.js"></script>
+</head>
+<body onload="openStream()">
+    <h3 id="my-peer">Your ID:</h3><br />
+    <video id="localStream" width="300" autoplay></video>
+    <br /><br />
+    <video id="remoteStream" width="300" autoplay muted></video>
+    <br /><br />
+    <input type="text" id="remoteID" placeholder="Remote ID.." />
+    <button id="btnCall" >Call</button>
+</body>
+<script src="main.js"></script>
+</html>
